@@ -3,12 +3,12 @@
   "cts" : 1747223433241,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1747223527895,
+  "mts" : 1747223541653,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "68248389aa5a6b1607e296a1",
   "revision" : 1,
-  "name" : "New Workflow 38",
+  "name" : "changelog-test",
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
@@ -18,11 +18,8 @@
   "locked" : true,
   "lockedBy" : "Akshatha sm",
   "edgeSet" : [ {
-    "source" : "47b61f44-4e2d-43da-b84d-b1d5989952fc",
-    "target" : "2e52d70b-3041-4cc7-9ea9-e5bf063005cf"
-  }, {
     "source" : "v1",
-    "target" : "47b61f44-4e2d-43da-b84d-b1d5989952fc"
+    "target" : "2e52d70b-3041-4cc7-9ea9-e5bf063005cf"
   } ],
   "vertexHashMap" : {
     "2e52d70b-3041-4cc7-9ea9-e5bf063005cf" : {
@@ -40,56 +37,6 @@
           "type" : "json"
         }
       }
-    },
-    "47b61f44-4e2d-43da-b84d-b1d5989952fc" : {
-      "vertexId" : "47b61f44-4e2d-43da-b84d-b1d5989952fc",
-      "vertexType" : "TARGET",
-      "name" : "vcn",
-      "target" : {
-        "name" : "vcn",
-        "description" : "bvgmhg",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "GET",
-          "scheme" : "https",
-          "host" : "url.ioas",
-          "path" : "/dfsafdzf",
-          "headerParams" : [ ],
-          "queryParams" : [ ],
-          "targetRequestBodyType" : "NONE",
-          "body" : {
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 400,
-          "variables" : [ ]
-        },
-        "timeout" : 0,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 400,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        },
-        "securityResponse" : {
-          "isEnabled" : false,
-          "useEnforcedRules" : false,
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 400,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        }
-      },
-      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
