@@ -3,7 +3,7 @@
   "cts" : 1747291105494,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1747291284852,
+  "mts" : 1747291927569,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "68258be1aa5a6b1607e2b184",
@@ -14,7 +14,7 @@
   "apiMethod" : "POST",
   "path" : "/mandatory_field",
   "pathArray" : [ "mandatory_field" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha sm",
   "edgeSet" : [ {
@@ -27,9 +27,9 @@
       "vertexType" : "START",
       "name" : "Request",
       "requestVariables" : [ {
-        "name" : "x-apikey:",
+        "name" : "interactionid",
         "reference" : "headers",
-        "value" : "x-apikey:",
+        "value" : "interactionid",
         "variableDataType" : "STRING",
         "active" : true,
         "source" : "headers",
@@ -54,7 +54,7 @@
         "hide" : false,
         "feelExpression" : false
       } ],
-      "mandatoryHeaders" : [ "interactionid", "jsessionid" ],
+      "mandatoryHeaders" : [ "jsessionid" ],
       "mandatoryQueryParams" : [ ],
       "imported" : true,
       "securityResponse" : {
@@ -87,11 +87,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1747291913809,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1747291291487,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1747291105494,
     "lastModifiedBy" : "Akshatha sm",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
