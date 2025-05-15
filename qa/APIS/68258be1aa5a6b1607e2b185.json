@@ -3,7 +3,7 @@
   "cts" : 1747291105494,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1747291928850,
+  "mts" : 1747292778373,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "68258be1aa5a6b1607e2b184",
@@ -36,6 +36,60 @@
         "hide" : false,
         "feelExpression" : false
       }, {
+        "name" : "intid",
+        "reference" : "headers",
+        "value" : "intid",
+        "variableDataType" : "INTEGER",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "boolean",
+        "reference" : "headers",
+        "value" : "boolean",
+        "variableDataType" : "BOOLEAN",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "double",
+        "reference" : "headers",
+        "value" : "double",
+        "variableDataType" : "DOUBLE",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "object",
+        "reference" : "headers",
+        "value" : "object",
+        "variableDataType" : "OBJECT",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "array",
+        "reference" : "headers",
+        "value" : "array",
+        "variableDataType" : "ARRAY",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "query",
+        "reference" : "query-params",
+        "value" : "query",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "query-params",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
         "name" : "body",
         "reference" : "body",
         "value" : "$",
@@ -47,7 +101,7 @@
       }, {
         "name" : "name",
         "reference" : "path-variable",
-        "value" : "$.name",
+        "value" : "query",
         "variableDataType" : "STRING",
         "active" : true,
         "source" : "path-variable",
@@ -55,7 +109,7 @@
         "feelExpression" : false
       } ],
       "mandatoryHeaders" : [ "jsessionid" ],
-      "mandatoryQueryParams" : [ ],
+      "mandatoryQueryParams" : [ "api" ],
       "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
@@ -87,6 +141,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1747292370284,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1747291935088,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1747291913809,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
