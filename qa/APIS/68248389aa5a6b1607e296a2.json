@@ -3,7 +3,7 @@
   "cts" : 1747223433241,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1747380727087,
+  "mts" : 1747380805092,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "68248389aa5a6b1607e296a1",
@@ -20,6 +20,9 @@
   "edgeSet" : [ {
     "source" : "v1",
     "target" : "f406536f-1b49-487d-91de-0b0066b3dceb"
+  }, {
+    "source" : "f406536f-1b49-487d-91de-0b0066b3dceb",
+    "target" : "b6eb292e-2c76-49db-899e-2ccb0d568775"
   }, {
     "source" : "f406536f-1b49-487d-91de-0b0066b3dceb",
     "target" : "ca90bde4-5d37-49f0-86ad-cdc7fb0c6208"
@@ -50,6 +53,13 @@
         },
         "flowVertexes" : [ "fba4d770-fa36-411e-85be-ccba04630ee3" ]
       }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "feelExpression" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "b6eb292e-2c76-49db-899e-2ccb0d568775" ]
+      }, {
         "condition" : "else",
         "assertion" : {
           "feelExpression" : false,
@@ -58,6 +68,22 @@
         "flowVertexes" : [ "a59d2424-42f9-4ff1-809a-918a3b538326" ]
       } ],
       "imported" : false
+    },
+    "b6eb292e-2c76-49db-899e-2ccb0d568775" : {
+      "vertexId" : "b6eb292e-2c76-49db-899e-2ccb0d568775",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{}",
+          "type" : "json"
+        }
+      }
     },
     "ca90bde4-5d37-49f0-86ad-cdc7fb0c6208" : {
       "vertexId" : "ca90bde4-5d37-49f0-86ad-cdc7fb0c6208",
