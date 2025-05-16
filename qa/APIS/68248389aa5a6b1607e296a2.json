@@ -3,7 +3,7 @@
   "cts" : 1747223433241,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1747380658284,
+  "mts" : 1747380674848,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "68248389aa5a6b1607e296a1",
@@ -23,6 +23,9 @@
   }, {
     "source" : "f406536f-1b49-487d-91de-0b0066b3dceb",
     "target" : "ca90bde4-5d37-49f0-86ad-cdc7fb0c6208"
+  }, {
+    "source" : "f406536f-1b49-487d-91de-0b0066b3dceb",
+    "target" : "a59d2424-42f9-4ff1-809a-918a3b538326"
   } ],
   "vertexHashMap" : {
     "f406536f-1b49-487d-91de-0b0066b3dceb" : {
@@ -41,7 +44,8 @@
         "assertion" : {
           "feelExpression" : false,
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "a59d2424-42f9-4ff1-809a-918a3b538326" ]
       } ],
       "imported" : false
     },
@@ -57,6 +61,22 @@
         },
         "body" : {
           "data" : "{\n    \"ok\":\"ok\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "a59d2424-42f9-4ff1-809a-918a3b538326" : {
+      "vertexId" : "a59d2424-42f9-4ff1-809a-918a3b538326",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"notok\":\"notok\"\n}",
           "type" : "json"
         }
       }
