@@ -3,7 +3,7 @@
   "cts" : 1747223433241,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1747381628452,
+  "mts" : 1747381856842,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "68248389aa5a6b1607e296a1",
@@ -22,13 +22,7 @@
     "target" : "f406536f-1b49-487d-91de-0b0066b3dceb"
   }, {
     "source" : "f406536f-1b49-487d-91de-0b0066b3dceb",
-    "target" : "b6eb292e-2c76-49db-899e-2ccb0d568775"
-  }, {
-    "source" : "f406536f-1b49-487d-91de-0b0066b3dceb",
     "target" : "ca90bde4-5d37-49f0-86ad-cdc7fb0c6208"
-  }, {
-    "source" : "f406536f-1b49-487d-91de-0b0066b3dceb",
-    "target" : "fba4d770-fa36-411e-85be-ccba04630ee3"
   }, {
     "source" : "f406536f-1b49-487d-91de-0b0066b3dceb",
     "target" : "a59d2424-42f9-4ff1-809a-918a3b538326"
@@ -60,34 +54,6 @@
         },
         "flowVertexes" : [ "ca90bde4-5d37-49f0-86ad-cdc7fb0c6208" ]
       }, {
-        "condition" : "else-if",
-        "assertion" : {
-          "expression" : "({0})",
-          "placeHolders" : [ {
-            "rule" : "EQUAL_TO",
-            "key" : "body",
-            "value" : "1",
-            "valueDataType" : "STRING"
-          } ],
-          "feelExpression" : false,
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 400,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "fba4d770-fa36-411e-85be-ccba04630ee3" ]
-      }, {
-        "condition" : "else-if",
-        "assertion" : {
-          "feelExpression" : false,
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "b6eb292e-2c76-49db-899e-2ccb0d568775" ]
-      }, {
         "condition" : "else",
         "assertion" : {
           "feelExpression" : false,
@@ -96,22 +62,6 @@
         "flowVertexes" : [ "a59d2424-42f9-4ff1-809a-918a3b538326" ]
       } ],
       "imported" : false
-    },
-    "b6eb292e-2c76-49db-899e-2ccb0d568775" : {
-      "vertexId" : "b6eb292e-2c76-49db-899e-2ccb0d568775",
-      "vertexType" : "STOP",
-      "name" : "Stop",
-      "imported" : false,
-      "proxyResponse" : {
-        "statusCode" : 200,
-        "headers" : {
-          "content-type" : "application/json"
-        },
-        "body" : {
-          "data" : "{\"ok\":\"3\"}",
-          "type" : "json"
-        }
-      }
     },
     "ca90bde4-5d37-49f0-86ad-cdc7fb0c6208" : {
       "vertexId" : "ca90bde4-5d37-49f0-86ad-cdc7fb0c6208",
@@ -141,22 +91,6 @@
         },
         "body" : {
           "data" : "{\n    \"notok\":\"notok\"\n}",
-          "type" : "json"
-        }
-      }
-    },
-    "fba4d770-fa36-411e-85be-ccba04630ee3" : {
-      "vertexId" : "fba4d770-fa36-411e-85be-ccba04630ee3",
-      "vertexType" : "STOP",
-      "name" : "Stop",
-      "imported" : false,
-      "proxyResponse" : {
-        "statusCode" : 200,
-        "headers" : {
-          "content-type" : "application/json"
-        },
-        "body" : {
-          "data" : "{\n    \"message\" \"ok2\"\n}",
           "type" : "json"
         }
       }
@@ -192,6 +126,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1747381843087,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1747381635407,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1747381612451,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
