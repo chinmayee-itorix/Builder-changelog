@@ -3,7 +3,7 @@
   "cts" : 1748243304620,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748243479912,
+  "mts" : 1748243525744,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "68341368ce94b72221791182",
@@ -12,8 +12,8 @@
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/delivery/agents/{zipcode}",
-  "pathArray" : [ "delivery", "agents", "*" ],
+  "path" : "/deliverys/agents/{zipcode}",
+  "pathArray" : [ "deliverys", "agents", "*" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "Akshatha sm",
@@ -112,6 +112,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1748243517910,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
+    "status" : "Approved",
+    "cts" : 1748243496155,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1748243304620,
     "lastModifiedBy" : "Akshatha sm",
