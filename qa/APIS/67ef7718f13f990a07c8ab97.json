@@ -1,0 +1,215 @@
+{
+  "id" : "67ef7718f13f990a07c8ab97",
+  "cts" : 1743746839942,
+  "createdUserName" : "Akshatha sm",
+  "modifiedUserName" : "Akshatha sm",
+  "mts" : 1748234983189,
+  "createdBy" : "67e298cbed1ae94ac870b921",
+  "modifiedBy" : "67e298cbed1ae94ac870b921",
+  "proxyId" : "67ef7717f13f990a07c8ab96",
+  "revision" : 1,
+  "name" : "Hotel details",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/hotel/placeorder",
+  "pathArray" : [ "hotel", "placeorder" ],
+  "revisionStatus" : "REVIEW",
+  "locked" : true,
+  "lockedBy" : "Akshatha sm",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "95730b34-66df-4f19-a488-2f13685e3411"
+  }, {
+    "source" : "95730b34-66df-4f19-a488-2f13685e3411",
+    "target" : "875e52c0-219d-40c3-b08b-03dc1b4905b5"
+  }, {
+    "source" : "95730b34-66df-4f19-a488-2f13685e3411",
+    "target" : "96dc3580-0b1f-4227-90a1-a8816964c211"
+  } ],
+  "vertexHashMap" : {
+    "95730b34-66df-4f19-a488-2f13685e3411" : {
+      "vertexId" : "95730b34-66df-4f19-a488-2f13685e3411",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "orderid",
+            "value" : "1ee4c2fb",
+            "valueDataType" : "STRING"
+          } ],
+          "feelExpression" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "875e52c0-219d-40c3-b08b-03dc1b4905b5" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "96dc3580-0b1f-4227-90a1-a8816964c211" ]
+      } ],
+      "imported" : false
+    },
+    "96dc3580-0b1f-4227-90a1-a8816964c211" : {
+      "vertexId" : "96dc3580-0b1f-4227-90a1-a8816964c211",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 404,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"message\" :\"coudn't able to place an order\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ {
+        "name" : "orderid",
+        "reference" : "body",
+        "value" : "$.order_id",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "imported" : true,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "875e52c0-219d-40c3-b08b-03dc1b4905b5" : {
+      "vertexId" : "875e52c0-219d-40c3-b08b-03dc1b4905b5",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n  \"hotel_id\":\"c4d0e761\",\n\"message\": \"Order accepted successfully\",\n  \"status\": \"Preparing\",\n  \"preparing_time\": \"2025-04-02T12:45:56Z\",\n  \"hotel_address\": {\n    \"street\": \"ganesh bhavana\",\n    \"city\": \"Bangalore\",\n    \"state\": \"Karnataka\",\n    \"zipcode\": \"560024\",\n    \"country\": \"India\",\n    \"phonenumber\" : \"7760794528\"\n  }\n}\n",
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748234956782,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1744029555277,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1744029520832,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1744029268545,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1744029247533,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1744029212613,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1744029110314,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1744028975982,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1744028735115,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1744019562253,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "ok"
+  }, {
+    "status" : "Review",
+    "cts" : 1744019532973,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1744019210019,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "ok"
+  }, {
+    "status" : "Review",
+    "cts" : 1744019081940,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1743769496272,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "ok"
+  }, {
+    "status" : "Draft",
+    "cts" : 1743746839942,
+    "lastModifiedBy" : "Akshatha sm",
+    "description" : "Created new proxy"
+  } ],
+  "virtualHostList" : [ ],
+  "enableTracing" : true,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "qa-dev",
+  "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : true,
+  "indexName" : "nw_logger",
+  "deleted" : false,
+  "deployed" : false
+}
