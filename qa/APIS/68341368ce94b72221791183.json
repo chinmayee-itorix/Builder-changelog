@@ -3,7 +3,7 @@
   "cts" : 1748243304620,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748255806623,
+  "mts" : 1748256243198,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "68341368ce94b72221791182",
@@ -11,7 +11,7 @@
   "name" : "Agent_details_krakend",
   "description" : "",
   "apiType" : "RESTAPI",
-  "apiMethod" : "POST",
+  "apiMethod" : "GET",
   "path" : "/deliverys/agents/{zipcode}",
   "pathArray" : [ "deliverys", "agents", "*" ],
   "revisionStatus" : "REVIEW",
@@ -89,15 +89,6 @@
       "vertexType" : "START",
       "name" : "Request",
       "requestVariables" : [ {
-        "name" : "orderid",
-        "reference" : "body",
-        "value" : "$.orderid",
-        "variableDataType" : "STRING",
-        "active" : true,
-        "source" : "raw",
-        "hide" : false,
-        "feelExpression" : false
-      }, {
         "name" : "zipcode",
         "reference" : "path-variable",
         "value" : "zipcode",
@@ -140,6 +131,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748256228637,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748255813114,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1748255702555,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
