@@ -3,7 +3,7 @@
   "cts" : 1748243304620,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748243422141,
+  "mts" : 1748243474224,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "68341368ce94b72221791182",
@@ -23,8 +23,27 @@
   }, {
     "source" : "v1",
     "target" : "10399332-14b5-4b92-83fd-bb7441f65e59"
+  }, {
+    "source" : "10399332-14b5-4b92-83fd-bb7441f65e59",
+    "target" : "350e1660-be33-4030-a285-f88d37a1da0c"
   } ],
   "vertexHashMap" : {
+    "350e1660-be33-4030-a285-f88d37a1da0c" : {
+      "vertexId" : "350e1660-be33-4030-a285-f88d37a1da0c",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"messsage\" : \"there no agent details in this zipcode\"\n}",
+          "type" : "json"
+        }
+      }
+    },
     "10399332-14b5-4b92-83fd-bb7441f65e59" : {
       "vertexId" : "10399332-14b5-4b92-83fd-bb7441f65e59",
       "vertexType" : "CONDITIONAL_FLOW",
@@ -41,7 +60,8 @@
         "assertion" : {
           "feelExpression" : false,
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "350e1660-be33-4030-a285-f88d37a1da0c" ]
       } ],
       "imported" : false
     },
