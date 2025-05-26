@@ -3,7 +3,7 @@
   "cts" : 1743746839942,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748266539675,
+  "mts" : 1748270076466,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "67ef7717f13f990a07c8ab96",
@@ -117,13 +117,23 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "[\n  {\n    \"id\": 1,\n    \"name\": \"Grand Palace Hotel\",\n    \"location\": \"New York\",\n    \"rating\": 4.5,\n    \"available\": true\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Beachside Resort\",\n    \"location\": \"Miami\",\n    \"rating\": 4.2,\n    \"available\": false\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Mountain View Inn\",\n    \"location\": \"Denver\",\n    \"rating\": 4.7,\n    \"available\": true\n  }\n]\n",
+          "data" : "{\n  \"accounts\": [\n    {\n      \"account_number\": \"1234567890\",\n      \"ifsc\": \"HDFC0000123\",\n      \"name_at_bank\": \"JOHN DOE\",\n      \"success\": true\n    }\n  ]\n}",
           "type" : "json"
         }
       }
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748270065272,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748266547911,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "wsd"
+  }, {
     "status" : "Review",
     "cts" : 1748266485032,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
