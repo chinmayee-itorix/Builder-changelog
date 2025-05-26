@@ -1,0 +1,225 @@
+{
+  "id" : "67ef7715f13f990a07c8ab93",
+  "cts" : 1743746837860,
+  "createdUserName" : "Akshatha sm",
+  "modifiedUserName" : "Akshatha sm",
+  "mts" : 1748242846066,
+  "createdBy" : "67e298cbed1ae94ac870b921",
+  "modifiedBy" : "67e298cbed1ae94ac870b921",
+  "proxyId" : "67ef7715f13f990a07c8ab92",
+  "revision" : 1,
+  "name" : "Agent_details_B",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/delivery/agents/zipcode",
+  "pathArray" : [ "delivery", "agents", "zipcode" ],
+  "revisionStatus" : "REVIEW",
+  "locked" : true,
+  "lockedBy" : "Akshatha sm",
+  "edgeSet" : [ {
+    "source" : "257088f7-93b0-42a5-92b9-1825c01a8884",
+    "target" : "5b604a1a-3397-4428-8eae-109836a34e3e"
+  }, {
+    "source" : "257088f7-93b0-42a5-92b9-1825c01a8884",
+    "target" : "e9c52a2b-1dba-4b63-bec2-81f4e614a83c"
+  }, {
+    "source" : "257088f7-93b0-42a5-92b9-1825c01a8884",
+    "target" : "d1da876f-525c-4d2c-8315-6e8570b4da28"
+  }, {
+    "source" : "v1",
+    "target" : "257088f7-93b0-42a5-92b9-1825c01a8884"
+  } ],
+  "vertexHashMap" : {
+    "e9c52a2b-1dba-4b63-bec2-81f4e614a83c" : {
+      "vertexId" : "e9c52a2b-1dba-4b63-bec2-81f4e614a83c",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "  {\n    \"agent_id\": \"De56e23gh\",\n    \"first_name\": \"Emily\",\n    \"last_name\": \"Johnson\",\n    \"email\": \"emily.johnson@example.com\",\n    \"phone_number\": \"+1122334455\",\n    \"status\": \"Active\",\n    \"address\": {\n      \"street\": \"789 bhadhrappa\",\n      \"city\": \"bangalaore\",\n      \"state\": \"karnataka\",\n      \"zipcode\": \"560023\",\n      \"country\": \"India\"\n    }\n  }",
+          "type" : "json"
+        }
+      }
+    },
+    "257088f7-93b0-42a5-92b9-1825c01a8884" : {
+      "vertexId" : "257088f7-93b0-42a5-92b9-1825c01a8884",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "zipcode",
+            "value" : "560024",
+            "valueDataType" : "INTEGER"
+          } ],
+          "feelExpression" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "d1da876f-525c-4d2c-8315-6e8570b4da28" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "zipcode",
+            "value" : "560045",
+            "valueDataType" : "INTEGER"
+          } ],
+          "feelExpression" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "5b604a1a-3397-4428-8eae-109836a34e3e" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "e9c52a2b-1dba-4b63-bec2-81f4e614a83c" ]
+      } ],
+      "imported" : false
+    },
+    "d1da876f-525c-4d2c-8315-6e8570b4da28" : {
+      "vertexId" : "d1da876f-525c-4d2c-8315-6e8570b4da28",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "\n  {\n  \"agent\": {\n    \"agent_id\": \"Ac32f85be\",\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"email\": \"john.doe@example.com\",\n    \"phone_number\": \"+1234567890\",\n    \"status\": \"Active\",\n    \"address\": {\n      \"street\": \"130 kempapura\",\n      \"city\": \"Bangalore\",\n      \"state\": \"Karnataka\",\n      \"zipcode\": \"560024\",\n      \"country\": \"India\"\n    },\n    \"profile\": {\n      \"designation\": \"Real Estate Agent\",\n      \"experience_years\": 5,\n      \"languages\": [\"English\", \"Kannada\"],\n      \"ratings\": {\n        \"average\": 4.7,\n        \"reviews_count\": 150\n      }\n    },\n    \"sales_data\": {\n      \"total_sales\": 120,\n      \"total_revenue\": 8500000,\n      \"monthly_sales\": {\n        \"2025-01\": 10,\n        \"2025-02\": 8,\n        \"2025-03\": 12,\n        \"2025-04\": 9\n      }\n    },\n    \"certifications\": [\n      {\n        \"name\": \"Certified Real Estate Professional\",\n        \"issuer\": \"National Real Estate Association\",\n        \"year\": 2020\n      },\n      {\n        \"name\": \"Advanced Negotiation Skills\",\n        \"issuer\": \"Real Estate Institute\",\n        \"year\": 2022\n      }\n    ],\n    \"availability\": {\n      \"working_days\": [\"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\"],\n      \"working_hours\": {\n        \"start\": \"09:00\",\n        \"end\": \"18:00\"\n      },\n      \"time_zone\": \"Asia/Kolkata\"\n    }\n  }\n}\n",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ {
+        "name" : "zipcode",
+        "reference" : "path-variable",
+        "value" : "zipcode",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "path-variable",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "imported" : true,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "5b604a1a-3397-4428-8eae-109836a34e3e" : {
+      "vertexId" : "5b604a1a-3397-4428-8eae-109836a34e3e",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"agent_id\": \"Bc45d90cf\",\n    \"first_name\": \"Jane\",\n    \"last_name\": \"Smith\",\n    \"email\": \"jane.smith@example.com\",\n    \"phone_number\": \"+0987654321\",\n    \"status\": \"Inactive\",\n    \"address\": {\n      \"street\": \"456 hebbala\",\n      \"city\": \"bnagalore\",\n      \"state\": \"karnataka\",\n      \"zipcode\": \"560045\",\n      \"country\": \"India\"\n    }\n}",
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748242733131,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1744030431408,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1744017734821,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1744017691297,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "ok"
+  }, {
+    "status" : "Review",
+    "cts" : 1744016952262,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1743769807938,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "OK"
+  }, {
+    "status" : "Review",
+    "cts" : 1743769779511,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1743769749544,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "OK"
+  }, {
+    "status" : "Draft",
+    "cts" : 1743746837860,
+    "lastModifiedBy" : "Akshatha sm",
+    "description" : "Created new proxy"
+  } ],
+  "virtualHostList" : [ ],
+  "enableTracing" : true,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "qa-dev",
+  "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : true,
+  "indexName" : "nw_logger",
+  "deleted" : false,
+  "deployed" : false
+}
