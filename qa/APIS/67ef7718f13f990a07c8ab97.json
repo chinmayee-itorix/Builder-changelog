@@ -3,7 +3,7 @@
   "cts" : 1743746839942,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748234984703,
+  "mts" : 1748266535749,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "67ef7717f13f990a07c8ab96",
@@ -117,13 +117,23 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "{\n  \"hotel_id\":\"c4d0e761\",\n\"message\": \"Order accepted successfully\",\n  \"status\": \"Preparing\",\n  \"preparing_time\": \"2025-04-02T12:45:56Z\",\n  \"hotel_address\": {\n    \"street\": \"ganesh bhavana\",\n    \"city\": \"Bangalore\",\n    \"state\": \"Karnataka\",\n    \"zipcode\": \"560024\",\n    \"country\": \"India\",\n    \"phonenumber\" : \"7760794528\"\n  }\n}\n",
+          "data" : "[\n  {\n    \"id\": 1,\n    \"name\": \"Grand Palace Hotel\",\n    \"location\": \"New York\",\n    \"rating\": 4.5,\n    \"available\": true\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Beachside Resort\",\n    \"location\": \"Miami\",\n    \"rating\": 4.2,\n    \"available\": false\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Mountain View Inn\",\n    \"location\": \"Denver\",\n    \"rating\": 4.7,\n    \"available\": true\n  }\n]\n",
           "type" : "json"
         }
       }
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748266485032,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748234992204,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1748234956782,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
