@@ -3,7 +3,7 @@
   "cts" : 1748243304620,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748243525744,
+  "mts" : 1748243584155,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "68341368ce94b72221791182",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/deliverys/agents/{zipcode}",
   "pathArray" : [ "deliverys", "agents", "*" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha sm",
   "edgeSet" : [ {
@@ -51,8 +51,22 @@
       "conditionalFlow" : [ {
         "condition" : "if",
         "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "zipcode",
+            "value" : "560024",
+            "valueDataType" : "STRING"
+          } ],
           "feelExpression" : false,
-          "continueOnError" : false
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
         },
         "flowVertexes" : [ "03974856-917a-4ea0-907f-96dee0432e52" ]
       }, {
@@ -112,6 +126,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748243573511,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748243534552,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1748243517910,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
@@ -127,6 +151,7 @@
     "lastModifiedBy" : "Akshatha sm",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
