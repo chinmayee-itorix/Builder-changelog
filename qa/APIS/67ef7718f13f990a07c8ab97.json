@@ -3,7 +3,7 @@
   "cts" : 1743746839942,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748270078154,
+  "mts" : 1748345085190,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "67ef7717f13f990a07c8ab96",
@@ -12,8 +12,8 @@
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "POST",
-  "path" : "/hotel/placeorder",
-  "pathArray" : [ "hotel", "placeorder" ],
+  "path" : "/v1/server/hotel/placeorder",
+  "pathArray" : [ "v1", "server", "hotel", "placeorder" ],
   "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha sm",
@@ -93,6 +93,8 @@
         "hide" : false,
         "feelExpression" : false
       } ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
       "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
@@ -124,6 +126,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748345067512,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748270085192,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1748270065272,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
