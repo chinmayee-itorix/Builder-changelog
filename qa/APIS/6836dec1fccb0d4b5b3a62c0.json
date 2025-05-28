@@ -3,22 +3,25 @@
   "cts" : 1748426433263,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748426433263,
+  "mts" : 1748426790790,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "6836dec1fccb0d4b5b3a62bf",
   "revision" : 1,
-  "name" : "New Workflow 48",
+  "name" : "soap_endpoint",
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/soapapi",
+  "pathArray" : [ "soapapi" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "Akshatha sm",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "c5d73e6c-fd51-4627-a956-f1ece721a4ac"
+  }, {
+    "source" : "c5d73e6c-fd51-4627-a956-f1ece721a4ac",
     "target" : "b68a7669-45f0-4f04-83ed-613e6e6142e3"
   } ],
   "vertexHashMap" : {
@@ -29,7 +32,7 @@
       "requestVariables" : [ ],
       "mandatoryHeaders" : [ ],
       "mandatoryQueryParams" : [ ],
-      "imported" : false,
+      "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
         "continueOnError" : false,
@@ -53,6 +56,60 @@
           "type" : "JSON"
         }
       }
+    },
+    "c5d73e6c-fd51-4627-a956-f1ece721a4ac" : {
+      "vertexId" : "c5d73e6c-fd51-4627-a956-f1ece721a4ac",
+      "vertexType" : "TARGET",
+      "name" : "soap_workflow",
+      "target" : {
+        "name" : "soap_workflow",
+        "description" : "soap_workflow",
+        "apiType" : "SOAP",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "qa-dev-lmxz.apiwiz.io",
+          "path" : "/soap",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "text/xml; charset=utf-8"
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "data" : "",
+            "type" : "xml"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -64,8 +121,8 @@
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "selectedVirtualHostName" : "",
-  "selectedVirtualHostId" : "",
+  "selectedVirtualHostName" : "qa-dev",
+  "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
   "kafkaConnectorId" : "",
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
