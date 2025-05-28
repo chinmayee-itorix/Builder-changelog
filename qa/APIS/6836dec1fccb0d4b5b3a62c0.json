@@ -3,7 +3,7 @@
   "cts" : 1748426433263,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748427099752,
+  "mts" : 1748427252624,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "6836dec1fccb0d4b5b3a62bf",
@@ -75,13 +75,13 @@
           "host" : "webservices.oorsprong.org",
           "path" : "/soap",
           "headerParams" : [ {
-            "name" : "Content-Type",
-            "value" : "text/xml; charset=utf-8"
+            "name" : "content-type",
+            "value" : "application/xml"
           } ],
           "queryParams" : [ ],
-          "targetRequestBodyType" : "NONE",
+          "targetRequestBodyType" : "RAW",
           "body" : {
-            "data" : "",
+            "data" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Request>\n    <Username>john.doe</Username>\n    <Password>SecureP@ss123</Password>\n    <Action>Login</Action>\n</Request>\n",
             "type" : "xml"
           },
           "formParams" : [ ],
@@ -117,6 +117,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748427244709,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748427107116,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1748427087992,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
