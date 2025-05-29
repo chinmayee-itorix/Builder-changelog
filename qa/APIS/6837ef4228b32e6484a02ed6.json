@@ -3,7 +3,7 @@
   "cts" : 1748496194784,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748496194784,
+  "mts" : 1748503937822,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "6837ef4228b32e6484a02ed5",
@@ -12,8 +12,8 @@
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/soap",
+  "pathArray" : [ "soap" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "Akshatha sm",
@@ -29,7 +29,7 @@
       "requestVariables" : [ ],
       "mandatoryHeaders" : [ ],
       "mandatoryQueryParams" : [ ],
-      "imported" : false,
+      "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
         "continueOnError" : false,
@@ -70,6 +70,6 @@
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
   "enableLogging" : false,
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
