@@ -3,7 +3,7 @@
   "cts" : 1748496194784,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748503990869,
+  "mts" : 1748504123188,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "6837ef4228b32e6484a02ed5",
@@ -103,8 +103,12 @@
       "imported" : false,
       "proxyResponse" : {
         "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/xml"
+        },
         "body" : {
-          "type" : "JSON"
+          "data" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <CapitalCityResponse xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\n      <CapitalCityResult>New Delhi</CapitalCityResult>\n    </CapitalCityResponse>\n  </soap:Body>\n</soap:Envelope>\n",
+          "type" : "xml"
         }
       }
     }
