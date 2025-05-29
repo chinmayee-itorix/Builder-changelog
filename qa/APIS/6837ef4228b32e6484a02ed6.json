@@ -3,12 +3,12 @@
   "cts" : 1748496194784,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748508326862,
+  "mts" : 1748509294387,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "6837ef4228b32e6484a02ed5",
   "revision" : 1,
-  "name" : "New Workflow 51",
+  "name" : "soap_workflow",
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
@@ -117,6 +117,26 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748509282468,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748509268550,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1748508446312,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748508335587,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1748508283039,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
