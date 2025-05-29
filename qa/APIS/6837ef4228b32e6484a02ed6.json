@@ -3,7 +3,7 @@
   "cts" : 1748496194784,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748504123188,
+  "mts" : 1748507581988,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "6837ef4228b32e6484a02ed5",
@@ -38,11 +38,14 @@
           "scheme" : "https",
           "host" : "webservices.oorsprong.org",
           "path" : "/soap_api",
-          "headerParams" : [ ],
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/xml"
+          } ],
           "queryParams" : [ ],
-          "targetRequestBodyType" : "NONE",
+          "targetRequestBodyType" : "RAW",
           "body" : {
-            "data" : "",
+            "data" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <CapitalCity xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\n      <sCountryISOCode>IN</sCountryISOCode>\n    </CapitalCity>\n  </soap:Body>\n</soap:Envelope>\n",
             "type" : "xml"
           },
           "formParams" : [ ],
