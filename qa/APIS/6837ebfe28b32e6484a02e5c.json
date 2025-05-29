@@ -3,7 +3,7 @@
   "cts" : 1748495358790,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748495586078,
+  "mts" : 1748495779584,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "6837ebfe28b32e6484a02e5b",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/graphql",
   "pathArray" : [ "graphql" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha sm",
   "edgeSet" : [ {
@@ -61,7 +61,7 @@
           "queryParams" : [ ],
           "targetRequestBodyType" : "RAW",
           "body" : {
-            "data" : "{\"query\":\"mutation {\\n  placeOrder(input: {\\n    agent_id: \\\"A12345\\\",\\n    order_id: \\\"1ee4c2fb\\\",\\n    hotel_id: \\\"c4d0e761\\\",\\n    hotel_address: {\\n      street: \\\"ganesh bhavana\\\",\\n      city: \\\"Bangalore\\\",\\n      state: \\\"aKarnataka\\\",\\n      zipcode: \\\"560024\\\",\\n      country: \\\"a\\\"\\n    },\\n    delivery_address: {\\n      street: \\\"130 ayyappa layout\\\",\\n      city: \\\"Bangalore\\\",\\n      state: \\\"Karnataka\\\",\\n      zipcode: \\\"560025\\\",\\n      country: \\\"\\\"\\n    }\\n  }) {\\n    accounts {\\n      account_number\\n      ifsc\\n      name_at_bank\\n      success\\n    }\\n  }\\n}\\n\",\"variables\":{}}",
+            "data" : "{\"query\":\"mutation {\\n  placeOrder(input: {\\n    agent_id: \\\"A12345\\\",\\n    order_id: \\\"1ee4c2fb\\\",\\n    hotel_id: \\\"c4d0e761\\\",\\n    hotel_address: {\\n      street: \\\"ganesh bhavana\\\",\\n      city: \\\"Bangalore\\\",\\n      state: \\\"aKarnataka\\\",\\n      zipcode: \\\"560024\\\",\\n      country: \\\"a\\\"\\n    },\\n    delivery_address: {\\n      street: \\\"130 ayyappa layout\\\",\\n      city: \\\"Bangalore\\\",\\n      state: \\\"Karnataka\\\",\\n      zipcode: \\\"560025\\\",\\n      country: \\\"\\\"\\n    }\\n  }) {\\n    accounts {\\n      account_number\\n      ifsc\\n      name_at_bank\\n      success\\n    }\\n  }\\n}\\n\",\"variables\":{\"query\":\"mutation PlaceOrder($input: PlaceOrderInput!) { placeOrder(input: $input) { accounts { account_number ifsc name_at_bank success } } }\"}}",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -117,11 +117,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748495754869,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748495592947,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1748495358790,
     "lastModifiedBy" : "Akshatha sm",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
