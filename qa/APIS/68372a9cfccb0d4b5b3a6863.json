@@ -3,7 +3,7 @@
   "cts" : 1748445852714,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748446082636,
+  "mts" : 1748487096553,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "68372a9cfccb0d4b5b3a6862",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "Akshatha sm",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "9b33ac07-52e1-4986-b141-be9655e018b1",
     "target" : "e9edcc88-8ec7-4e68-8949-a46fac96e0ce"
+  }, {
+    "source" : "v1",
+    "target" : "9b33ac07-52e1-4986-b141-be9655e018b1"
   } ],
   "vertexHashMap" : {
     "e9edcc88-8ec7-4e68-8949-a46fac96e0ce" : {
@@ -33,6 +36,59 @@
           "type" : "JSON"
         }
       }
+    },
+    "9b33ac07-52e1-4986-b141-be9655e018b1" : {
+      "vertexId" : "9b33ac07-52e1-4986-b141-be9655e018b1",
+      "vertexType" : "TARGET",
+      "name" : "graphql",
+      "target" : {
+        "name" : "graphql",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "qa-dev-lmxz.apiwiz.io",
+          "path" : "/hotel/placeorder_graphql",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : {
+            "data" : "{\"query\":\"{\\n  \\\"query\\\": \\\"mutation PlaceOrder($input: PlaceOrderInput!) { placeOrder(input: $input) { accounts { account_number ifsc name_at_bank success } } }\\\",\\n  \\\"operationName\\\": \\\"PlaceOrder\\\",\\n  \\\"variables\\\": {\\n    \\\"input\\\": {\\n      \\\"agent_id\\\": \\\"A12345\\\",\\n      \\\"order_id\\\": \\\"1ee4c2fb\\\",\\n      \\\"hotel_id\\\": \\\"c4d0e761\\\",\\n      \\\"hotel_address\\\": {\\n        \\\"street\\\": \\\"ganesh bhavana\\\",\\n        \\\"city\\\": \\\"Bangalore\\\",\\n        \\\"state\\\": \\\"aKarnataka\\\",\\n        \\\"zipcode\\\": \\\"560024\\\",\\n        \\\"country\\\": \\\"a\\\"\\n      },\\n      \\\"delivery_address\\\": {\\n        \\\"street\\\": \\\"130 ayyappa layout\\\",\\n        \\\"city\\\": \\\"Bangalore\\\",\\n        \\\"state\\\": \\\"Karnataka\\\",\\n        \\\"zipcode\\\": \\\"560025\\\",\\n        \\\"country\\\": \\\"\\\"\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
