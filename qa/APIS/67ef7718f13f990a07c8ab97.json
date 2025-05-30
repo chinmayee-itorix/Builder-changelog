@@ -3,7 +3,7 @@
   "cts" : 1743746839942,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748582108031,
+  "mts" : 1748587603585,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "67ef7717f13f990a07c8ab96",
@@ -119,13 +119,23 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "{\n  \n      \"account_number\": \"1234567890\",\n      \"ifsc\": \"HDFC0000123\",\n      \"name_at_bank\": \"JOHN DOE\",\n      \"success\": true\n   \n}",
+          "data" : "{\n  \n      \"account_number\": \"1234567890\",\n      \"ifsc\": \"HDFC0000123\",\n      \"name_at_bank\": \"JOHN DOE\",\n      \"name\" :\"bank\"\n      \"success\": true\n   \n}",
           "type" : "json"
         }
       }
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748587577750,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748582115749,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1748582090716,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
