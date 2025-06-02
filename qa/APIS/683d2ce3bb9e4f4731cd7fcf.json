@@ -3,7 +3,7 @@
   "cts" : 1748839651661,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748845947992,
+  "mts" : 1748849286308,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "683d2ce3bb9e4f4731cd7fce",
@@ -11,7 +11,7 @@
   "name" : "new_krakend_workflow",
   "description" : "new_krakend_workflow",
   "apiType" : "RESTAPI",
-  "apiMethod" : "PUT",
+  "apiMethod" : "POST",
   "path" : "/krakend",
   "pathArray" : [ "krakend" ],
   "revisionStatus" : "REVIEW",
@@ -60,6 +60,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748849275436,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748845954386,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1748845922790,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
