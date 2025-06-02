@@ -3,7 +3,7 @@
   "cts" : 1748839651661,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748841585814,
+  "mts" : 1748841733661,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "683d2ce3bb9e4f4731cd7fce",
@@ -14,7 +14,7 @@
   "apiMethod" : "PUT",
   "path" : "/krakend",
   "pathArray" : [ "krakend" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha sm",
   "edgeSet" : [ {
@@ -60,11 +60,32 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748841722147,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748841702151,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1748841668864,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748841600547,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "OK"
+  }, {
     "status" : "Draft",
     "cts" : 1748839651661,
     "lastModifiedBy" : "Akshatha sm",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
