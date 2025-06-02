@@ -3,7 +3,7 @@
   "cts" : 1748839651661,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748845540872,
+  "mts" : 1748845561907,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "683d2ce3bb9e4f4731cd7fce",
@@ -50,11 +50,11 @@
       "proxyResponse" : {
         "statusCode" : 200,
         "headers" : {
-          "content-type" : "application/xml"
+          "content-type" : "application/json"
         },
         "body" : {
-          "data" : "<response>\n  <status>success</status>\n  <message>Order processed successfully</message>\n  <order>\n    <id>12345</id>\n    <item>Hotel Booking</item>\n    <status>Confirmed</status>\n  </order>\n</response>\n",
-          "type" : "xml"
+          "data" : "{\n    \"message\" : \"krakend \"\n}\n",
+          "type" : "json"
         }
       }
     }
