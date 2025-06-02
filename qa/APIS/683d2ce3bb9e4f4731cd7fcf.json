@@ -3,7 +3,7 @@
   "cts" : 1748839651661,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748850336711,
+  "mts" : 1748850592063,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "683d2ce3bb9e4f4731cd7fce",
@@ -26,8 +26,17 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Request",
-      "requestVariables" : [ ],
-      "mandatoryHeaders" : [ "x-apikey" ],
+      "requestVariables" : [ {
+        "name" : "x-apikey",
+        "reference" : "headers",
+        "value" : "E5KAHRATn8kjWZbdAVaXTD7FVtCsdXuijm9dRpatlBLJ4gOplbGSMWSOlcn8x1lwyJLgzug1UVfmF%2FduXtk1oa9oG5%2BS6iDGA9zWpTjafpy4U0OT9kBiA5r%2FnDb55MzE4qfKfWXlpAqtEZrDiwtOlR1tjjzdCTEYmqPEfjYgQr7%2FWjIUBU2UQdB6zg2oQUWKBbPf1NY%2BF%2BTZiVcbhbwHibM7%2ByTSeLydksCElDo84GEb06QyoHxkXbB%2BQLWBdw9PvShGJr1e3xnIcf1MupyIPDVfB1WjwqNPSUD%2BKKqtKI%2FOSjQGR4x%2F6ov8zESd1nGQAiEKCvAW5%2FuhF5uVv0A70w%3D%3D New performance insights The Performance > Insights tab gets new insights: duplicated JavaScript, modern HTTP, and use efficient cache lifetimes.  Click events to keep them highlighted in Performance Click items in Summary, Bottom-up, Call tree, and Event log tables to keep the corresponding events highlighted in the trace and dim the rest.  Filter cookies in Privacy and security The cookies table in the 'Privacy and security' panel gets a filter, so you can quickly find the cookie you want to inspect.",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "mandatoryHeaders" : [ ],
       "mandatoryQueryParams" : [ ],
       "imported" : true,
       "securityResponse" : {
@@ -60,6 +69,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748850535988,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748850345828,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1748850266932,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
