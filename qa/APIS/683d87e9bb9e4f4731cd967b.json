@@ -3,7 +3,7 @@
   "cts" : 1748862953021,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1748863019748,
+  "mts" : 1748863071586,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "683d87e9bb9e4f4731cd967a",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "Sujith Kumar",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "fe2f5d45-ad82-4df5-87b9-4eae4d93b295",
     "target" : "882d6fee-e4d2-43d4-8303-8ead464127d1"
+  }, {
+    "source" : "v1",
+    "target" : "fe2f5d45-ad82-4df5-87b9-4eae4d93b295"
   } ],
   "vertexHashMap" : {
     "882d6fee-e4d2-43d4-8303-8ead464127d1" : {
@@ -33,6 +36,33 @@
           "type" : "JSON"
         }
       }
+    },
+    "fe2f5d45-ad82-4df5-87b9-4eae4d93b295" : {
+      "vertexId" : "fe2f5d45-ad82-4df5-87b9-4eae4d93b295",
+      "vertexType" : "ENCRYPTION",
+      "name" : "decryption",
+      "description" : "",
+      "decryptionData" : {
+        "encryptionDecryptionOperationList" : [ {
+          "targetVariable" : "res",
+          "sourceVariable" : "payload",
+          "sourceProvidedAtNode" : false,
+          "transformationKey" : "faef6e16136c059f108d46da316adf16",
+          "initializationVector" : "c7e86975bed9613d",
+          "algorithmType" : "AES",
+          "modeType" : "CBC",
+          "paddingType" : "PKCS5Padding"
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
