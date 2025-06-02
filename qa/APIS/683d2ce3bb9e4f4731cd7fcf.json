@@ -3,7 +3,7 @@
   "cts" : 1748839651661,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748845564322,
+  "mts" : 1748845945907,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "683d2ce3bb9e4f4731cd7fce",
@@ -53,13 +53,23 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"message\" : \"krakend \"\n}\n",
+          "data" : "{\n  \"status\": \"success\",\n  \"booking_id\": \"TRV-784512\",\n  \"user\": {\n    \"id\": 2101,\n    \"name\": \"Emily Johnson\",\n    \"email\": \"emily.johnson@example.com\",\n    \"phone\": \"+1-555-1234\"\n  },\n  \"flights\": {\n    \"departure\": {\n      \"flight_number\": \"UA102\",\n      \"airline\": \"United Airlines\",\n      \"from\": \"JFK\",\n      \"to\": \"LAX\",\n      \"departure_time\": \"2025-07-10T08:00:00Z\",\n      \"arrival_time\": \"2025-07-10T11:00:00Z\"\n    },\n    \"return\": {\n      \"flight_number\": \"UA103\",\n      \"airline\": \"United Airlines\",\n      \"from\": \"LAX\",\n      \"to\": \"JFK\",\n      \"departure_time\": \"2025-07-15T14:00:00Z\",\n      \"arrival_time\": \"2025-07-15T21:00:00Z\"\n    }\n  },\n  \"hotel\": {\n    \"name\": \"Grand Pacific Hotel\",\n    \"address\": \"123 Sunset Blvd, Los Angeles, CA\",\n    \"check_in\": \"2025-07-10\",\n    \"check_out\": \"2025-07-15\",\n  }\n}\n",
           "type" : "json"
         }
       }
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748845922790,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748845574072,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1748845524149,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
