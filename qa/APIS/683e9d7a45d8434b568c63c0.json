@@ -3,7 +3,7 @@
   "cts" : 1748934010945,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748934693581,
+  "mts" : 1748953086868,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "683e9d7a45d8434b568c63bf",
@@ -53,13 +53,23 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "",
+          "data" : "{\n    \"userid\" : \"123\",\n    \"usename\" : \"ad\"\n}",
           "type" : "json"
         }
       }
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1748953057753,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748934702308,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1748934684791,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
@@ -95,6 +105,6 @@
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
   "enableLogging" : false,
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
