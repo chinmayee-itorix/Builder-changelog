@@ -3,7 +3,7 @@
   "cts" : 1748928625266,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1748950205435,
+  "mts" : 1749025601356,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "683e887145d8434b568c6002",
@@ -53,13 +53,23 @@
           "content-type" : "application/xml"
         },
         "body" : {
-          "data" : "<user>\n  <userid>123</userid>\n  <username>ad</username>\n</user>\n",
+          "data" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n    <soap:Body>\n        <AddResponse xmlns=\"http://tempuri.org/\">\n            <AddResult>8</AddResult>\n        </AddResponse>\n    </soap:Body>\n</soap:Envelope>\n",
           "type" : "xml"
         }
       }
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749025593502,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1748950212392,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1748950194948,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
