@@ -3,7 +3,7 @@
   "cts" : 1749010578714,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1749193348553,
+  "mts" : 1749201903023,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "683fc892fe6cc95bad80904f",
@@ -53,13 +53,43 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"message\" : \"succesfull\",\n    \"user\" : \"adad\"\n}",
+          "data" : "{\n  \"status\": \"success\",\n  \"timestamp\": \"2025-06-06T11:45:00Z\",\n  \"user\": {\n    \"id\": 101,\n    \"username\": \"johndoe\",\n    \"email\": \"johndoe@example.com\"\n  },\n  \"order\": {\n    \"order_id\": \"ORD789456\",\n    \"status\": \"confirmed\",\n    \"total_amount\": 1250.00,\n    \"items\": [\n      {\n        \"product_id\": \"P-202501\",\n        \"name\": \"Wireless Headphones\",\n        \"quantity\": 1,\n        \"price\": 99.99\n      },\n      {\n        \"product_id\": \"P-202502\",\n        \"name\": \"Bluetooth Speaker\",\n        \"quantity\": 2,\n        \"price\": 75.00\n      }\n    ]\n  },\n  \"shipping\": {\n    \"address\": \"123 Main Street, Bangalore, IN\",\n    \"method\": \"Express\",\n    \"estimated_delivery\": \"2025-06-09\"\n  },\n  \"meta\": {\n    \"server\": \"krakend-gateway\",\n    \"api_version\": \"v1.2\"\n  }\n}\n",
           "type" : "json"
         }
       }
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749201893907,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749201649982,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1749201358231,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749201283206,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1749197945670,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749193376786,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1749193337111,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
