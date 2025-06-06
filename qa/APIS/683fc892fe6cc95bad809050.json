@@ -3,7 +3,7 @@
   "cts" : 1749010578714,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1749192884952,
+  "mts" : 1749192927270,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "683fc892fe6cc95bad80904f",
@@ -14,7 +14,7 @@
   "apiMethod" : "PUT",
   "path" : "/krakend_endpoint2",
   "pathArray" : [ "krakend_endpoint2" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha sm",
   "edgeSet" : [ {
@@ -27,7 +27,7 @@
       "vertexType" : "START",
       "name" : "Request",
       "requestVariables" : [ ],
-      "mandatoryHeaders" : [ ],
+      "mandatoryHeaders" : [ "header_put" ],
       "mandatoryQueryParams" : [ ],
       "imported" : true,
       "securityResponse" : {
@@ -60,6 +60,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749192916790,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749192891271,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1749192858950,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
