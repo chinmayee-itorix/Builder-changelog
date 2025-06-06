@@ -3,7 +3,7 @@
   "cts" : 1749010109262,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1749191559990,
+  "mts" : 1749192019107,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "683fc6bdfe6cc95bad808ff9",
@@ -43,7 +43,7 @@
       "vertexType" : "START",
       "name" : "Request",
       "requestVariables" : [ ],
-      "mandatoryHeaders" : [ ],
+      "mandatoryHeaders" : [ "header_get" ],
       "mandatoryQueryParams" : [ ],
       "imported" : true,
       "securityResponse" : {
@@ -60,6 +60,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749192006232,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749191566392,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1749191550951,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
