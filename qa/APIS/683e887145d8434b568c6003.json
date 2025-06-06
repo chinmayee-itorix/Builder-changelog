@@ -3,7 +3,7 @@
   "cts" : 1748928625266,
   "createdUserName" : "Akshatha sm",
   "modifiedUserName" : "Akshatha sm",
-  "mts" : 1749205393671,
+  "mts" : 1749205609509,
   "createdBy" : "67e298cbed1ae94ac870b921",
   "modifiedBy" : "67e298cbed1ae94ac870b921",
   "proxyId" : "683e887145d8434b568c6002",
@@ -50,16 +50,26 @@
       "proxyResponse" : {
         "statusCode" : 200,
         "headers" : {
-          "content-type" : "application/xml"
+          "content-type" : "application/json"
         },
         "body" : {
-          "data" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n    <soap:Body>\n        <AddResponse xmlns=\"http://tempuri.org/\">\n            <AddResult>8</AddResult>\n        </AddResponse>\n    </soap:Body>\n</soap:Envelope>\n",
-          "type" : "xml"
+          "data" : "{\n          \"allow\": [],\n          \"deny\": [],\n          \"backendEncoding\": \"xml\",\n          \"group\": \"\",\n          \"host\": [\n            \"https://qa-dev-lmxz.apiwiz.io\"\n          ],\n          \"mapping\": {\n            \"\": \"\"\n          },\n          \"method\": \"GET\",\n          \"sd\": \"static\",\n          \"target\": \"\",\n          \"disable_host_sanitize\": false,\n          \"extra_config\": {},\n          \"input_headers\": [\n          ],\n          \"input_query_strings\": [],\n          \"is_collection\": false,\n          \"sd_scheme\": \"https\",\n          \"url_pattern\": \"/xml\"\n        }",
+          "type" : "json"
         }
       }
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749205557182,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749205400143,
+    "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1749205381992,
     "lastModifiedBy" : "67e298cbed1ae94ac870b921",
