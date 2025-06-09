@@ -3,7 +3,7 @@
   "cts" : 1748862953021,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749465492145,
+  "mts" : 1749465546431,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "683d87e9bb9e4f4731cd967a",
@@ -80,9 +80,9 @@
       "description" : "",
       "encryptionData" : {
         "encryptionDecryptionOperationList" : [ {
-          "operationName" : "1",
-          "description" : "asd",
-          "targetVariable" : "first",
+          "operationName" : "adf",
+          "description" : "d",
+          "targetVariable" : "res",
           "sourceData" : "{ \"order\" : \"ASC\", \"page\" : 1, \"page_size\" : 1 }",
           "sourceProvidedAtNode" : true,
           "transformationKey" : "000102030405060708090a0b0c0d0e0f",
@@ -91,9 +91,9 @@
           "modeType" : "GCM",
           "paddingType" : "NoPadding"
         }, {
-          "operationName" : "adf",
-          "description" : "d",
-          "targetVariable" : "res",
+          "operationName" : "1",
+          "description" : "asd",
+          "targetVariable" : "first",
           "sourceData" : "{ \"order\" : \"ASC\", \"page\" : 1, \"page_size\" : 1 }",
           "sourceProvidedAtNode" : true,
           "transformationKey" : "000102030405060708090a0b0c0d0e0f",
@@ -145,6 +145,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749465540236,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749465497590,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1749465438147,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
