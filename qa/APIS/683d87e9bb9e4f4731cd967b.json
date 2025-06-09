@@ -3,7 +3,7 @@
   "cts" : 1748862953021,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749452137261,
+  "mts" : 1749454803823,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "683d87e9bb9e4f4731cd967a",
@@ -18,11 +18,8 @@
   "locked" : true,
   "lockedBy" : "Sujith Kumar",
   "edgeSet" : [ {
-    "source" : "6a97c670-26bc-4ee5-b201-c9ee195d045e",
-    "target" : "882d6fee-e4d2-43d4-8303-8ead464127d1"
-  }, {
     "source" : "131ddc32-b175-4771-a2c0-9ff8a075711b",
-    "target" : "6a97c670-26bc-4ee5-b201-c9ee195d045e"
+    "target" : "882d6fee-e4d2-43d4-8303-8ead464127d1"
   }, {
     "source" : "v1",
     "target" : "131ddc32-b175-4771-a2c0-9ff8a075711b"
@@ -75,20 +72,19 @@
     },
     "131ddc32-b175-4771-a2c0-9ff8a075711b" : {
       "vertexId" : "131ddc32-b175-4771-a2c0-9ff8a075711b",
-      "vertexType" : "DECRYPTION",
+      "vertexType" : "ENCRYPTION",
       "name" : "decr",
       "description" : "",
-      "decryptionData" : {
+      "encryptionData" : {
         "encryptionDecryptionOperationList" : [ {
-          "operationName" : "a",
-          "description" : "a",
+          "operationName" : "s",
+          "description" : "s",
           "targetVariable" : "res",
-          "sourceVariable" : "payload",
-          "sourceProvidedAtNode" : false,
+          "sourceData" : "{   \"order\" : \"ASC\",   \"page\" : 1,   \"page_size\" : 1 }",
+          "sourceProvidedAtNode" : true,
           "transformationKey" : "faef6e16136c059f108d46da316adf16",
-          "initializationVector" : "c7e86975bed9613d",
           "algorithmType" : "AES",
-          "modeType" : "CBC",
+          "modeType" : "ECB",
           "paddingType" : "PKCS5Padding"
         } ],
         "continueOnError" : false,
@@ -101,19 +97,19 @@
         }
       },
       "imported" : false
-    },
-    "6a97c670-26bc-4ee5-b201-c9ee195d045e" : {
-      "vertexId" : "6a97c670-26bc-4ee5-b201-c9ee195d045e",
-      "vertexType" : "LOGGER",
-      "name" : "Logger",
-      "description" : "",
-      "logData" : {
-        "data" : "{\n    \"m\": \"{{{res}}}\"\n}"
-      },
-      "imported" : false
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749453903994,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749452152152,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "a"
+  }, {
     "status" : "Review",
     "cts" : 1749452117760,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
