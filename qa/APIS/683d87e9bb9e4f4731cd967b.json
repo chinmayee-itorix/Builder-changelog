@@ -3,7 +3,7 @@
   "cts" : 1748862953021,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749461985113,
+  "mts" : 1749463432861,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "683d87e9bb9e4f4731cd967a",
@@ -22,6 +22,9 @@
     "target" : "882d6fee-e4d2-43d4-8303-8ead464127d1"
   }, {
     "source" : "v1",
+    "target" : "7db8e816-3e2d-48b2-9143-2aa03074197d"
+  }, {
+    "source" : "7db8e816-3e2d-48b2-9143-2aa03074197d",
     "target" : "131ddc32-b175-4771-a2c0-9ff8a075711b"
   } ],
   "vertexHashMap" : {
@@ -70,6 +73,35 @@
         }
       }
     },
+    "7db8e816-3e2d-48b2-9143-2aa03074197d" : {
+      "vertexId" : "7db8e816-3e2d-48b2-9143-2aa03074197d",
+      "vertexType" : "ENCRYPTION",
+      "name" : "encrypt",
+      "description" : "",
+      "encryptionData" : {
+        "encryptionDecryptionOperationList" : [ {
+          "operationName" : "adf",
+          "description" : "d",
+          "targetVariable" : "res",
+          "sourceData" : "{ \"order\" : \"ASC\", \"page\" : 1, \"page_size\" : 1 }",
+          "sourceProvidedAtNode" : true,
+          "transformationKey" : "000102030405060708090a0b0c0d0e0f",
+          "initializationVector" : "1a2b3c4d5e6f",
+          "algorithmType" : "AES",
+          "modeType" : "GCM",
+          "paddingType" : "NoPadding"
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "131ddc32-b175-4771-a2c0-9ff8a075711b" : {
       "vertexId" : "131ddc32-b175-4771-a2c0-9ff8a075711b",
       "vertexType" : "DECRYPTION",
@@ -100,6 +132,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749463350305,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749461994787,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1749461697269,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
