@@ -3,7 +3,7 @@
   "cts" : 1748862953021,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749461518787,
+  "mts" : 1749461985113,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "683d87e9bb9e4f4731cd967a",
@@ -72,15 +72,15 @@
     },
     "131ddc32-b175-4771-a2c0-9ff8a075711b" : {
       "vertexId" : "131ddc32-b175-4771-a2c0-9ff8a075711b",
-      "vertexType" : "ENCRYPTION",
+      "vertexType" : "DECRYPTION",
       "name" : "decr",
       "description" : "",
-      "encryptionData" : {
+      "decryptionData" : {
         "encryptionDecryptionOperationList" : [ {
-          "operationName" : "as",
-          "description" : "d",
+          "operationName" : "xb",
+          "description" : "b",
           "targetVariable" : "res",
-          "sourceData" : "{\"page\":1}\\x00\\x00\\x00\\x00\\x00",
+          "sourceData" : "m7+IiiPjBR82FLybTiVX8IQUo3KqBsid3nL6qBPHdOc=",
           "sourceProvidedAtNode" : true,
           "transformationKey" : "00112233445566778899aabbccddeeff",
           "algorithmType" : "AES",
@@ -100,6 +100,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749461697269,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749461525510,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1749461457101,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
