@@ -3,7 +3,7 @@
   "cts" : 1748862953021,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749448795515,
+  "mts" : 1749449783263,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "683d87e9bb9e4f4731cd967a",
@@ -76,7 +76,7 @@
     "131ddc32-b175-4771-a2c0-9ff8a075711b" : {
       "vertexId" : "131ddc32-b175-4771-a2c0-9ff8a075711b",
       "vertexType" : "DECRYPTION",
-      "name" : "encry",
+      "name" : "decr",
       "description" : "",
       "decryptionData" : {
         "encryptionDecryptionOperationList" : [ {
