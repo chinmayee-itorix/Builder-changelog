@@ -3,7 +3,7 @@
   "cts" : 1748862953021,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749447794131,
+  "mts" : 1749448246629,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "683d87e9bb9e4f4731cd967a",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "Sujith Kumar",
   "edgeSet" : [ {
-    "source" : "131ddc32-b175-4771-a2c0-9ff8a075711b",
+    "source" : "6a97c670-26bc-4ee5-b201-c9ee195d045e",
     "target" : "882d6fee-e4d2-43d4-8303-8ead464127d1"
+  }, {
+    "source" : "131ddc32-b175-4771-a2c0-9ff8a075711b",
+    "target" : "6a97c670-26bc-4ee5-b201-c9ee195d045e"
   }, {
     "source" : "v1",
     "target" : "131ddc32-b175-4771-a2c0-9ff8a075711b"
@@ -98,9 +101,29 @@
         }
       },
       "imported" : false
+    },
+    "6a97c670-26bc-4ee5-b201-c9ee195d045e" : {
+      "vertexId" : "6a97c670-26bc-4ee5-b201-c9ee195d045e",
+      "vertexType" : "LOGGER",
+      "name" : "Logger",
+      "description" : "",
+      "logData" : {
+        "data" : "{\n    \"m\": \"{{res}}\"\n}"
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749448227275,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749447804223,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1749447728950,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
