@@ -1,0 +1,75 @@
+{
+  "id" : "6847f7d67a19875808659fe1",
+  "cts" : 1749546966461,
+  "createdUserName" : "Sujith Kumar",
+  "modifiedUserName" : "Sujith Kumar",
+  "mts" : 1749546966461,
+  "createdBy" : "67a0969408a0e559a5309912",
+  "modifiedBy" : "67a0969408a0e559a5309912",
+  "proxyId" : "6847f7d67a19875808659fe0",
+  "revision" : 1,
+  "name" : "New Workflow 69",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Sujith Kumar",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "e83c5f10-21b2-4c74-96fe-6baca4043a69"
+  } ],
+  "vertexHashMap" : {
+    "e83c5f10-21b2-4c74-96fe-6baca4043a69" : {
+      "vertexId" : "e83c5f10-21b2-4c74-96fe-6baca4043a69",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1749546966461,
+    "lastModifiedBy" : "Sujith Kumar",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deleted" : false,
+  "deployed" : false
+}
