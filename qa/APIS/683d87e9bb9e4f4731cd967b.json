@@ -3,7 +3,7 @@
   "cts" : 1748862953021,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749466171343,
+  "mts" : 1749532738306,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "683d87e9bb9e4f4731cd967a",
@@ -123,25 +123,25 @@
           "operationName" : "1",
           "description" : "1",
           "targetVariable" : "first-encr",
-          "sourceData" : "{ \"order\" : \"ASC\", \"page\" : 1, \"page_size\" : 1 }",
+          "sourceData" : "HELLO",
           "sourceProvidedAtNode" : true,
-          "transformationKey" : "000102030405060708090a0b0c0d0e0f",
+          "transformationKey" : "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAucZyGcRyk9WvuQYRPc8u1Vn70BqXFeM2l40/+IbvfBR6zXgKWUiwujDpwTK3LFmWnifal8ksg4bP80vvyOZdKUCf5jTUabCTsR10r0X87FRbQseC1xEyAcppsCBTbKn+nYskU1Aj06cTfQKHpiIuoBWbdsC8BSGjNuErlWkA2LU8E//A5cnpvZa4Zu7voccFwEKgn6zz5wGUnf8yfFhdewWhNGB+WNSVNGwm95TGhlHEWQnaDLXVwQrGVgtypsj6InBy/DP/reAOrwWbSbDYxN50IhQKR9io/sJ4LdIcPTuLIOeUYkGVXmAotHKE6+LM/Peb4vhcGoUy0IpB4i1zNQIDAQAB",
           "initializationVector" : "1a2b3c4d5e6f",
-          "algorithmType" : "AES",
-          "modeType" : "GCM",
-          "paddingType" : "NoPadding"
+          "algorithmType" : "RSA",
+          "modeType" : "ECB",
+          "paddingType" : "PKCS1Padding"
         }, {
           "operationName" : "2",
-          "description" : "",
-          "targetVariable" : "second-encry",
+          "description" : "2",
+          "targetVariable" : "second",
           "sourceVariable" : "payload",
-          "sourceData" : "{ \"order\" : \"ASC\", \"page\" : 1, \"page_size\" : 1 }",
+          "sourceData" : "HELLO",
           "sourceProvidedAtNode" : true,
-          "transformationKey" : "000102030405060708090a0b0c0d0e0f",
+          "transformationKey" : "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAucZyGcRyk9WvuQYRPc8u1Vn70BqXFeM2l40/+IbvfBR6zXgKWUiwujDpwTK3LFmWnifal8ksg4bP80vvyOZdKUCf5jTUabCTsR10r0X87FRbQseC1xEyAcppsCBTbKn+nYskU1Aj06cTfQKHpiIuoBWbdsC8BSGjNuErlWkA2LU8E//A5cnpvZa4Zu7voccFwEKgn6zz5wGUnf8yfFhdewWhNGB+WNSVNGwm95TGhlHEWQnaDLXVwQrGVgtypsj6InBy/DP/reAOrwWbSbDYxN50IhQKR9io/sJ4LdIcPTuLIOeUYkGVXmAotHKE6+LM/Peb4vhcGoUy0IpB4i1zNQIDAQAB",
           "initializationVector" : "1a2b3c4d5e6f",
-          "algorithmType" : "AES",
-          "modeType" : "GCM",
-          "paddingType" : "NoPadding"
+          "algorithmType" : "RSA",
+          "modeType" : "ECB",
+          "paddingType" : "OAEPPadding"
         } ],
         "continueOnError" : false,
         "errorResponse" : {
@@ -197,6 +197,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749532588067,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749466178555,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1749466086714,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
@@ -357,6 +367,6 @@
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
   "enableLogging" : false,
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
