@@ -3,7 +3,7 @@
   "cts" : 1749546966461,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749547102142,
+  "mts" : 1749547110302,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "6847f7d67a19875808659fe0",
@@ -32,8 +32,12 @@
       "imported" : false,
       "proxyResponse" : {
         "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
         "body" : {
-          "type" : "JSON"
+          "data" : "{{{res}}}",
+          "type" : "json"
         }
       }
     },
