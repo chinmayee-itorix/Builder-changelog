@@ -3,7 +3,7 @@
   "cts" : 1749546966461,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749547110302,
+  "mts" : 1749547244865,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "6847f7d67a19875808659fe0",
@@ -14,7 +14,7 @@
   "apiMethod" : "POST",
   "path" : "/crypt",
   "pathArray" : [ "crypt" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Sujith Kumar",
   "edgeSet" : [ {
@@ -36,7 +36,7 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "{{{res}}}",
+          "data" : "{\n    \"a\": \"{{{res}}}\"\n\n}",
           "type" : "json"
         }
       }
@@ -92,11 +92,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749547213350,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749547115989,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1749546966461,
     "lastModifiedBy" : "Sujith Kumar",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
