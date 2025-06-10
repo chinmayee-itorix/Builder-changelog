@@ -3,7 +3,7 @@
   "cts" : 1749546966461,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749547245909,
+  "mts" : 1749556962550,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "6847f7d67a19875808659fe0",
@@ -36,7 +36,7 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"a\": \"{{{res}}}\"\n\n}",
+          "data" : "{\n    \"a\": {{{res}}}\n\n}",
           "type" : "json"
         }
       }
@@ -92,6 +92,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749556951353,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749547252072,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1749547213350,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
