@@ -3,7 +3,7 @@
   "cts" : 1749633718793,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749634113364,
+  "mts" : 1749634153363,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68494ab6396c231dd224e1c5",
@@ -18,11 +18,14 @@
   "locked" : true,
   "lockedBy" : "Sujith Kumar",
   "edgeSet" : [ {
-    "source" : "cff341a9-9b78-42ac-8ca1-99618ce6d1ea",
-    "target" : "9b931a47-12a1-4fc9-bf2e-cc0c7df79ca8"
-  }, {
     "source" : "v1",
     "target" : "cff341a9-9b78-42ac-8ca1-99618ce6d1ea"
+  }, {
+    "source" : "06fb4c12-d2db-4923-963b-ed82de4fe1f5",
+    "target" : "9b931a47-12a1-4fc9-bf2e-cc0c7df79ca8"
+  }, {
+    "source" : "cff341a9-9b78-42ac-8ca1-99618ce6d1ea",
+    "target" : "06fb4c12-d2db-4923-963b-ed82de4fe1f5"
   } ],
   "vertexHashMap" : {
     "cff341a9-9b78-42ac-8ca1-99618ce6d1ea" : {
@@ -105,6 +108,55 @@
           }
         }
       }
+    },
+    "06fb4c12-d2db-4923-963b-ed82de4fe1f5" : {
+      "vertexId" : "06fb4c12-d2db-4923-963b-ed82de4fe1f5",
+      "vertexType" : "TARGET",
+      "name" : "convert",
+      "target" : {
+        "name" : "convert",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "qa-dev-ieia.apiwiz.io",
+          "path" : "/real-time/convert",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
