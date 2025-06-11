@@ -3,7 +3,7 @@
   "cts" : 1749633718793,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749637613918,
+  "mts" : 1749637622161,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68494ab6396c231dd224e1c5",
@@ -124,7 +124,7 @@
           "apiMethod" : "GET",
           "scheme" : "https",
           "host" : "qa-dev-ieia.apiwiz.io",
-          "path" : "/receipt/details/1234",
+          "path" : "/v121/receipt/details/1234",
           "headerParams" : [ {
             "name" : "x-application-type",
             "value" : "ApiSandbox"
