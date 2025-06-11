@@ -3,7 +3,7 @@
   "cts" : 1749633718793,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749634704714,
+  "mts" : 1749634770481,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68494ab6396c231dd224e1c5",
@@ -125,7 +125,10 @@
           "scheme" : "https",
           "host" : "qa-dev-ieia.apiwiz.io",
           "path" : "/receipt/details/{transaction_id}",
-          "headerParams" : [ ],
+          "headerParams" : [ {
+            "name" : "x-application-type",
+            "value" : "ApiSandbox"
+          } ],
           "queryParams" : [ ],
           "targetRequestBodyType" : "NONE",
           "body" : {
@@ -164,6 +167,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749634741920,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749634711438,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1749634664639,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
