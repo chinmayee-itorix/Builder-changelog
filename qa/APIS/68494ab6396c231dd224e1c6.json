@@ -3,7 +3,7 @@
   "cts" : 1749633718793,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1749634474161,
+  "mts" : 1749634703602,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68494ab6396c231dd224e1c5",
@@ -21,8 +21,11 @@
     "source" : "v1",
     "target" : "06fb4c12-d2db-4923-963b-ed82de4fe1f5"
   }, {
-    "source" : "06fb4c12-d2db-4923-963b-ed82de4fe1f5",
+    "source" : "f6191473-9f97-47e9-9b6b-6ec199c14672",
     "target" : "9b931a47-12a1-4fc9-bf2e-cc0c7df79ca8"
+  }, {
+    "source" : "06fb4c12-d2db-4923-963b-ed82de4fe1f5",
+    "target" : "f6191473-9f97-47e9-9b6b-6ec199c14672"
   } ],
   "vertexHashMap" : {
     "9b931a47-12a1-4fc9-bf2e-cc0c7df79ca8" : {
@@ -109,9 +112,68 @@
         }
       },
       "imported" : false
+    },
+    "f6191473-9f97-47e9-9b6b-6ec199c14672" : {
+      "vertexId" : "f6191473-9f97-47e9-9b6b-6ec199c14672",
+      "vertexType" : "TARGET",
+      "name" : "reciept",
+      "target" : {
+        "name" : "reciept",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "qa-dev-ieia.apiwiz.io",
+          "path" : "/receipt/details/{transaction_id}",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1749634664639,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1749634478798,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1749634447279,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
