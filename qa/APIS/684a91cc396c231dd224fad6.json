@@ -1,0 +1,75 @@
+{
+  "id" : "684a91cc396c231dd224fad6",
+  "cts" : 1749717452796,
+  "createdUserName" : "Akshatha sm",
+  "modifiedUserName" : "Akshatha sm",
+  "mts" : 1749717452796,
+  "createdBy" : "67e298cbed1ae94ac870b921",
+  "modifiedBy" : "67e298cbed1ae94ac870b921",
+  "proxyId" : "684a91cc396c231dd224fad5",
+  "revision" : 1,
+  "name" : "New Workflow 71",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akshatha sm",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "f7f9707e-cc2c-4074-9035-d83a66f9004a"
+  } ],
+  "vertexHashMap" : {
+    "f7f9707e-cc2c-4074-9035-d83a66f9004a" : {
+      "vertexId" : "f7f9707e-cc2c-4074-9035-d83a66f9004a",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1749717452796,
+    "lastModifiedBy" : "Akshatha sm",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deleted" : false,
+  "deployed" : false
+}
